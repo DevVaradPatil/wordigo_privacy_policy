@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Wordigo</title>
+    <title>Wordigo - A Modern Word Puzzle Game</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#3b82f6', // Matches your Flutter blue badge
-                        secondary: '#f97316', // Matches your Dart orange badge
+                        primary: '#3b82f6',
+                        secondary: '#f97316',
                     }
                 }
             }
         }
     </script>
     <style>
-        /* Custom scrollbar for a polished feel */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -37,146 +36,141 @@
 <body class="bg-slate-50 text-slate-700 font-sans leading-relaxed">
 
     <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-2">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
                 <img src="./app_logo.svg" alt="Wordigo Logo" class="h-10 w-10">
                 <h1 class="text-xl font-bold text-slate-800 tracking-tight">Wordigo</h1>
-            </div>
-            <nav class="hidden sm:block text-sm font-medium text-slate-500">
-                <a href="#collection" class="hover:text-primary transition-colors mr-4">Data</a>
-                <a href="#third-party" class="hover:text-primary transition-colors mr-4">Third Party</a>
-                <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+            </a>
+            <nav class="hidden sm:flex text-sm font-medium text-slate-500 gap-6">
+                <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+                <a href="privacy.html" class="hover:text-primary transition-colors">Privacy Policy</a>
+                <a href="terms.html" class="hover:text-primary transition-colors">Terms of Service</a>
             </nav>
         </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-6 py-12">
-        
-        <div class="bg-white rounded-2xl shadow-sm p-8 sm:p-12 border border-slate-100">
-            
-            <div class="border-b border-slate-100 pb-8 mb-8">
-                <h2 class="text-3xl font-bold text-slate-900 mb-2">Privacy Policy</h2>
-                <p class="text-slate-500">Last updated: <span id="date-placeholder">January 21st, 2026</span></p>
-            </div>
-
-            <div class="space-y-8">
-                <section>
-                    <p>
-                        This Privacy Policy explains how <strong>Wordigo</strong> ("we", "us", or "our") collects, uses, and discloses information about you when you use our mobile application.
-                        By using Wordigo, you consent to the processing of your information as described in this policy.
-                    </p>
-                </section>
-
-                <section id="collection">
-                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
-                        <span class="w-1 h-6 bg-secondary rounded-full mr-3"></span>
-                        Information We Collect
-                    </h3>
-                    <p class="mb-4">
-                        We design our app to minimize data collection. However, certain data is required for the app to function, display ads, and process purchases.
-                    </p>
-                    <ul class="list-disc pl-5 space-y-2 marker:text-primary">
-                        <li><strong>Device Information:</strong> We may collect information about your mobile device, including device model, operating system version (Android/iOS), and unique device identifiers.</li>
-                        <li><strong>Usage Data:</strong> We collect anonymous data about your game progress, such as levels completed (Career/Zen mode), gems earned, and ad interactions to improve the game experience.</li>
-                        <li><strong>Crash Logs:</strong> If the app crashes, we collect log data to help us fix bugs.</li>
-                    </ul>
-                </section>
-
-                <section id="third-party">
-                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
-                        <span class="w-1 h-6 bg-primary rounded-full mr-3"></span>
-                        Third-Party Services
-                    </h3>
-                    <p class="mb-4">
-                        We use third-party services that may collect information used to identify you. Below are the links to the privacy policies of the third-party service providers used by the app:
-                    </p>
-                    
-                    <div class="grid md:grid-cols-2 gap-4 mt-6">
-                        <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
-                            <h4 class="font-semibold text-slate-900">Google AdMob</h4>
-                            <p class="text-sm text-slate-500 mt-1 mb-3">Used to serve Rewarded Video and Interstitial ads.</p>
-                            <a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" class="text-primary text-sm hover:underline font-medium">Read Policy &rarr;</a>
-                        </div>
-
-                        <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
-                            <h4 class="font-semibold text-slate-900">Google Firebase</h4>
-                            <p class="text-sm text-slate-500 mt-1 mb-3">Used for analytics, authentication, and backend services.</p>
-                            <a href="https://firebase.google.com/policies/analytics" target="_blank" class="text-primary text-sm hover:underline font-medium">Read Policy &rarr;</a>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
-                        <span class="w-1 h-6 bg-secondary rounded-full mr-3"></span>
-                        Ads & In-App Purchases
-                    </h3>
-                    <div class="space-y-4">
-                        <div>
-                            <h4 class="font-bold text-slate-800">Advertising</h4>
-                            <p>
-                                Wordigo uses Google AdMob to display ads. These services may use your device's Advertising ID to serve personalized ads based on your interests. You can opt-out of personalized advertising in your Android settings under <em>Settings > Google > Ads</em>.
-                            </p>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-slate-800">In-App Purchases</h4>
-                            <p>
-                                Our app allows you to purchase virtual items (e.g., Gems) via Google Play Billing. We do not process or store your financial information (credit card numbers) directly; all transactions are handled securely by Google.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
-                        <span class="w-1 h-6 bg-slate-300 rounded-full mr-3"></span>
-                        Data Retention & Security
-                    </h3>
-                    <p>
-                        We retain your game progress locally on your device using shared preferences. If you use Firebase features, some data may be stored in the cloud to sync your progress. We strive to use commercially acceptable means to protect your Personal Information, but remember that no method of transmission over the internet is 100% secure.
-                    </p>
-                </section>
-
-                 <section>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
-                        <span class="w-1 h-6 bg-slate-300 rounded-full mr-3"></span>
-                        Children’s Privacy
-                    </h3>
-                    <p>
-                        These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers.
-                    </p>
-                </section>
-
-                <section id="contact" class="bg-blue-50 p-6 rounded-xl border border-blue-100 mt-8">
-                    <h3 class="text-lg font-bold text-blue-900 mb-2">Contact Us</h3>
-                    <p class="text-blue-800 mb-4">
-                        If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.
-                    </p>
-                    <a href="mailto:varadapatil123@gmail.com" class="inline-flex items-center justify-center px-4 py-2 bg-white text-blue-600 font-semibold rounded-lg border border-blue-200 hover:bg-blue-50 transition-all shadow-sm">
-                        varadapatil123@gmail.com
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-white py-20 px-6 border-b border-slate-100 text-center">
+            <div class="max-w-4xl mx-auto">
+                <img src="./app_logo.svg" alt="Wordigo" class="h-24 w-24 mx-auto mb-6">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">
+                    Challenge Your Brain with <span class="text-primary">Wordigo</span>
+                </h2>
+                <p class="text-xl text-slate-500 mb-10 max-w-2xl mx-auto">
+                    A modern, feature-rich take on word-guessing games. Choose your mode, customize your profile, and test your vocabulary!
+                </p>
+                <div class="flex justify-center gap-4 mb-20">
+                    <a href="https://play.google.com/store/apps/details?id=com.vertexstudios.wordigo" target="_blank" class="px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-blue-600 transition-colors shadow-lg flex items-center justify-center gap-3 w-full sm:w-auto text-lg">
+                        <img src="./google-play-store-icon.svg" alt="play_store" class="h-6 w-6">
+                        Get it on Android
                     </a>
-                </section>
-
+                </div>
+                
+                <div class="relative max-w-4xl mx-auto rounded-[2rem] overflow-hidden shadow-2xl border border-slate-200 bg-slate-100 ring-4 ring-white">
+                    <img src="./banner.png" alt="Wordigo Game Banner" class="w-full object-cover">
+                </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 px-6 max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-slate-900 mb-4">Everything You Need in a Puzzle Game</h3>
+                <p class="text-slate-500">Play, progress, and personalize your experience with our comprehensive features.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Game Modes -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 bg-blue-50 text-primary rounded-xl flex items-center justify-center mb-6 text-2xl font-bold">🎯</div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Multiple Game Modes</h4>
+                    <p class="text-slate-500 mb-4">
+                        Progress through increasing difficulties in <strong>Career Mode</strong>, relax without limits in <strong>Zen Mode</strong>, or test your skills globally in the <strong>Daily Wordle</strong> challenge.
+                    </p>
+                </div>
+
+                <!-- Customization -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 bg-orange-50 text-secondary rounded-xl flex items-center justify-center mb-6 text-2xl font-bold">🎨</div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Deep Customization</h4>
+                    <p class="text-slate-500 mb-4">
+                        Make it yours with multiple color themes, customizable tile skins, and a rich avatar system featuring over 20 animal-themed profiles.
+                    </p>
+                </div>
+
+                <!-- Gamification -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 bg-indigo-50 text-indigo-500 rounded-xl flex items-center justify-center mb-6 text-2xl font-bold">🏆</div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Rewards & Progress</h4>
+                    <p class="text-slate-500 mb-4">
+                        Unlock achievements, complete daily challenges to earn Gems, and track your win streaks and personal statistics to see your improvement.
+                    </p>
+                </div>
+
+                <!-- Offline Support -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 bg-green-50 text-green-500 rounded-xl flex items-center justify-center mb-6 text-2xl font-bold">📶</div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Play Anywhere</h4>
+                    <p class="text-slate-500 mb-4">
+                        Full offline support means you can play without an internet connection. Auto-save ensures you never lose your progress mid-game.
+                    </p>
+                </div>
+
+                <!-- Hints & Help -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 bg-yellow-50 text-yellow-500 rounded-xl flex items-center justify-center mb-6 text-2xl font-bold">💡</div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Smart Assistance</h4>
+                    <p class="text-slate-500 mb-4">
+                        Stuck on a tricky word? Use your Gems for letter reveals, or use our emergency hints system to keep your streak alive.
+                    </p>
+                </div>
+
+                <!-- Sharing -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 bg-pink-50 text-pink-500 rounded-xl flex items-center justify-center mb-6 text-2xl font-bold">✨</div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Brag to Friends</h4>
+                    <p class="text-slate-500 mb-4">
+                        Easily share your game results, achievements, and Daily Wordle scores with friends using our built-in sharing feature.
+                    </p>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm">
-        <p>&copy; <span id="year"></span> Wordigo. All rights reserved.</p>
+    <footer class="bg-slate-900 text-slate-400 py-12">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8 mb-8 border-b border-slate-800 pb-8">
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <img src="./app_logo.svg" alt="Wordigo Logo" class="h-8 w-8 opacity-80 backdrop-grayscale">
+                    <h4 class="text-xl font-bold text-white tracking-tight">Wordigo</h4>
+                </div>
+                <p class="text-sm text-slate-500 max-w-xs">
+                    The ultimate word puzzle game built with Flutter. Available exclusively on Android.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Legal</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Contact</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="mailto:varadapatil123@gmail.com" class="hover:text-white transition-colors">Support Email</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center text-sm">
+            <p>&copy; <span id="year"></span> Wordigo. All rights reserved.</p>
+        </div>
     </footer>
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
-        
-        // Optional: Smooth scroll behavior
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
     </script>
 </body>
 </html>

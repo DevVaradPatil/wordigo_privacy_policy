@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Wordigo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6', // Matches your Flutter blue badge
+                        secondary: '#f97316', // Matches your Dart orange badge
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for a polished feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-700 font-sans leading-relaxed">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                <img src="./app_logo.svg" alt="Wordigo Logo" class="h-10 w-10">
+                <h1 class="text-xl font-bold text-slate-800 tracking-tight">Wordigo</h1>
+            </a>
+            <nav class="hidden sm:flex text-sm font-medium text-slate-500 gap-6">
+                <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+                <a href="privacy.html" class="hover:text-primary transition-colors">Privacy Policy</a>
+                <a href="terms.html" class="hover:text-primary transition-colors">Terms of Service</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12">
+        
+        <div class="bg-white rounded-2xl shadow-sm p-8 sm:p-12 border border-slate-100">
+            
+            <div class="border-b border-slate-100 pb-8 mb-8">
+                <h2 class="text-3xl font-bold text-slate-900 mb-2">Privacy Policy</h2>
+                <p class="text-slate-500">Last updated: <span id="date-placeholder">January 21st, 2026</span></p>
+            </div>
+
+            <div class="space-y-8">
+                <section>
+                    <p>
+                        This Privacy Policy explains how <strong>Wordigo</strong> ("we", "us", or "our") collects, uses, and discloses information about you when you use our mobile application.
+                        By using Wordigo, you consent to the processing of your information as described in this policy.
+                    </p>
+                </section>
+
+                <section id="collection">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
+                        <span class="w-1 h-6 bg-secondary rounded-full mr-3"></span>
+                        Information We Collect
+                    </h3>
+                    <p class="mb-4">
+                        We design our app to minimize data collection. However, certain data is required for the app to function, display ads, and process purchases.
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2 marker:text-primary">
+                        <li><strong>Device Information:</strong> We may collect information about your mobile device, including device model, operating system version (Android/iOS), and unique device identifiers.</li>
+                        <li><strong>Usage Data:</strong> We collect anonymous data about your game progress, such as levels completed (Career/Zen mode), gems earned, and ad interactions to improve the game experience.</li>
+                        <li><strong>Crash Logs:</strong> If the app crashes, we collect log data to help us fix bugs.</li>
+                    </ul>
+                </section>
+
+                <section id="third-party">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
+                        <span class="w-1 h-6 bg-primary rounded-full mr-3"></span>
+                        Third-Party Services
+                    </h3>
+                    <p class="mb-4">
+                        We use third-party services that may collect information used to identify you. Below are the links to the privacy policies of the third-party service providers used by the app:
+                    </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 mt-6">
+                        <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                            <h4 class="font-semibold text-slate-900">Google AdMob</h4>
+                            <p class="text-sm text-slate-500 mt-1 mb-3">Used to serve Rewarded Video and Interstitial ads.</p>
+                            <a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" class="text-primary text-sm hover:underline font-medium">Read Policy &rarr;</a>
+                        </div>
+
+                        <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                            <h4 class="font-semibold text-slate-900">Google Firebase</h4>
+                            <p class="text-sm text-slate-500 mt-1 mb-3">Used for analytics, authentication, and backend services.</p>
+                            <a href="https://firebase.google.com/policies/analytics" target="_blank" class="text-primary text-sm hover:underline font-medium">Read Policy &rarr;</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
+                        <span class="w-1 h-6 bg-secondary rounded-full mr-3"></span>
+                        Ads & In-App Purchases
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-bold text-slate-800">Advertising</h4>
+                            <p>
+                                Wordigo uses Google AdMob to display ads. These services may use your device's Advertising ID to serve personalized ads based on your interests. You can opt-out of personalized advertising in your Android settings under <em>Settings > Google > Ads</em>.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-800">In-App Purchases</h4>
+                            <p>
+                                Our app allows you to purchase virtual items (e.g., Gems) via Google Play Billing. We do not process or store your financial information (credit card numbers) directly; all transactions are handled securely by Google.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
+                        <span class="w-1 h-6 bg-slate-300 rounded-full mr-3"></span>
+                        Data Retention & Security
+                    </h3>
+                    <p>
+                        We retain your game progress locally on your device using shared preferences. If you use Firebase features, some data may be stored in the cloud to sync your progress. We strive to use commercially acceptable means to protect your Personal Information, but remember that no method of transmission over the internet is 100% secure.
+                    </p>
+                </section>
+
+                 <section>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
+                        <span class="w-1 h-6 bg-slate-300 rounded-full mr-3"></span>
+                        Children’s Privacy
+                    </h3>
+                    <p>
+                        These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers.
+                    </p>
+                </section>
+
+                <section id="contact" class="bg-blue-50 p-6 rounded-xl border border-blue-100 mt-8">
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Contact Us</h3>
+                    <p class="text-blue-800 mb-4">
+                        If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.
+                    </p>
+                    <a href="mailto:varadapatil123@gmail.com" class="inline-flex items-center justify-center px-4 py-2 bg-white text-blue-600 font-semibold rounded-lg border border-blue-200 hover:bg-blue-50 transition-all shadow-sm">
+                        varadapatil123@gmail.com
+                    </a>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm">
+        <p>&copy; <span id="year"></span> Wordigo. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Optional: Smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
